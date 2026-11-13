@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Checklist Item 6: Unique Page Title -->
+  <title>PantryChef — Smart Indian 3-Step Meal Generator (&lt;30m Express)</title>
+  
+  <!-- Checklist Item 7: Meta Description -->
+  <meta name="description" content="Generate zero-waste healthy Indian meals under 30 minutes from fridge leftovers and dabba staples. Calibrated 400–550 kcal guardrail for Indian family diets.">
+  <meta name="keywords" content="Indian meal generator, pantry chef, healthy desi dinner, quick Indian recipes, low oil cooking, diabetic friendly dinner, Indian calorie tracker">
+  <meta name="author" content="PantryChef India">
+  
+  <!-- Checklist Item 1: Canonical URL -->
+  <link rel="canonical" href="https://pantrychef.app/">
+  
+  <!-- Checklist Item 2: Open Graph & Social Cards -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PantryChef">
+  <meta property="og:url" content="https://pantrychef.app/">
+  <meta property="og:title" content="PantryChef — Smart Indian 3-Step Meal Generator">
+  <meta property="og:description" content="Zero-waste healthy Indian dinner ideas from fridge leftovers & dabba staples strictly under 30 minutes.">
+  <meta property="og:image" content="https://pantrychef.app/assets/paneer-bhurji.png">
+  <meta property="og:image:alt" content="Tawa Paneer Bhurji with multigrain phulkas and jeera raita">
+  <meta property="og:locale" content="en_IN">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PantryChef — Smart Indian 3-Step Meal Generator">
+  <meta name="twitter:description" content="Turn kitchen dabba staples and leftover veggies into a chef-grade Indian dinner in under 30 minutes.">
+  <meta name="twitter:image" content="https://pantrychef.app/assets/paneer-bhurji.png">
+  <meta name="twitter:image:alt" content="Tawa Paneer Bhurji with multigrain phulkas">
+
+  <!-- Checklist Item 3: In-page Security Meta Tags -->
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- Checklist Item 15: Page Speed & Resource Hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #121314;
+        color: #e3e2e3;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        max-width: 100%;
+        width: 100%;
+      }
+      body {
+        overscroll-behavior: none;
+      }
+      main > :first-child {
+        margin-top: 0 !important;
+      }
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .focus-ring:focus-visible {
+      outline: 2px solid #f59e0b;
+      outline-offset: 2px;
+    }
+  </style>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-bright": "#39393a",
+            "on-tertiary-container": "#4c4500",
+            "surface-container": "#1f2021",
+            "inverse-on-surface": "#303031",
+            "on-surface-variant": "#d8c3ad",
+            "surface-tint": "#ffb95f",
+            "surface-variant": "#343536",
+            "on-primary-container": "#613b00",
+            "surface-container-lowest": "#0d0e0f",
+            "on-primary-fixed": "#2a1700",
+            "inverse-surface": "#e3e2e3",
+            "on-secondary-fixed": "#251a00",
+            "on-error-container": "#ffdad6",
+            "background": "#121314",
+            "secondary-fixed": "#ffdf9a",
+            "tertiary-container": "#bfb354",
+            "surface": "#121314",
+            "on-tertiary": "#363100",
+            "secondary-container": "#e4ae00",
+            "on-secondary-fixed-variant": "#5a4300",
+            "error-container": "#93000a",
+            "surface-container-low": "#1b1c1d",
+            "primary": "#ffc174",
+            "surface-container-high": "#292a2b",
+            "primary-container": "#f59e0b",
+            "primary-fixed": "#ffddb8",
+            "on-surface": "#e3e2e3",
+            "on-secondary-container": "#5b4400",
+            "inverse-primary": "#855300",
+            "secondary": "#ffca45",
+            "on-error": "#690005",
+            "on-background": "#e3e2e3",
+            "tertiary-fixed-dim": "#d5c867",
+            "primary-fixed-dim": "#ffb95f",
+            "on-secondary": "#3f2e00",
+            "tertiary-fixed": "#f2e580",
+            "outline": "#a08e7a",
+            "on-primary": "#472a00",
+            "surface-dim": "#121314",
+            "outline-variant": "#534434",
+            "tertiary": "#dccf6d",
+            "on-tertiary-fixed-variant": "#4f4800",
+            "on-tertiary-fixed": "#201c00",
+            "error": "#ffb4ab",
+            "on-primary-fixed-variant": "#653e00",
+            "surface-container-highest": "#343536",
+            "secondary-fixed-dim": "#f7be1d"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "space-xl": "2.5rem",
+            "gutter-mobile": "0.75rem",
+            "margin": "2.5rem",
+            "space-sm": "0.5rem",
+            "margin-mobile": "1rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem",
+            "space-md": "1rem",
+            "gutter": "1.5rem"
+          },
+          fontFamily: {
+            "headline-md": ["Space Grotesk", "sans-serif"],
+            "headline-xl": ["Space Grotesk", "sans-serif"],
+            "headline-lg": ["Space Grotesk", "sans-serif"],
+            "body-sm": ["Manrope", "sans-serif"],
+            "body-md": ["Manrope", "sans-serif"],
+            "body-lg": ["Manrope", "sans-serif"],
+            "label-sm": ["JetBrains Mono", "monospace"],
+            "label-md": ["JetBrains Mono", "monospace"],
+            "label-lg": ["JetBrains Mono", "monospace"],
+            "headline-sm": ["Space Grotesk", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-background font-body-md text-on-surface antialiased min-h-screen selection:bg-secondary-container selection:text-surface-container-lowest">
+
+  <!-- Checklist Item 19: Skip to Main Content Link for Accessibility -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary-container focus:text-surface-container-lowest focus:rounded-lg focus:font-label-md focus:shadow-xl focus:outline-none">
+    Skip to main content
+  </a>
+
+  <!-- Live Toast Status Banner for Form & Action Feedback -->
+  <div id="toast-banner" role="status" aria-live="polite" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none bg-surface-container-high border border-primary-container/40 text-on-surface px-5 py-3 rounded-xl shadow-2xl flex items-center gap-3">
+    <span class="material-symbols-outlined text-primary text-[20px]" id="toast-icon">check_circle</span>
+    <span class="font-body-sm text-body-sm" id="toast-message">Action successful</span>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-surface-container shadow-[0_4px_24px_rgba(0,0,0,0.5)]">
+    <div class="h-20 w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-2 sm:gap-4">
+      
+      <!-- Left: Brand Logo -->
+      <a href="index.html" class="flex items-center gap-2 group focus-ring rounded-lg p-1 flex-shrink-0" aria-label="PantryChef Homepage">
+        <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-gradient-to-tr from-amber-600 via-primary-container to-secondary p-0.5 flex items-center justify-center shadow-lg shadow-primary-container/20 group-hover:scale-105 transition-transform">
+          <div class="w-full h-full bg-surface-container-lowest rounded-[10px] flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary text-[18px] sm:text-[20px]">skillet</span>
+          </div>
+        </div>
+        <span class="font-headline-sm font-bold text-headline-sm tracking-tight text-on-surface flex items-center gap-1">
+          Pantry<span class="text-primary">Chef</span>
+        </span>
+        <span class="hidden sm:inline-flex items-center px-2 py-0.5 rounded-full bg-primary-container/10 border border-primary-container/30 text-primary font-label-sm text-[11px] tracking-wide">
+          &lt;30m Express
+        </span>
+      </a>
+
+      <!-- Center: Desktop Navigation Links -->
+      <nav class="hidden xl:flex items-center gap-1 p-1 rounded-full bg-surface-container-low border border-surface-container flex-shrink-0" aria-label="Main Navigation">
+        <a href="index.html" aria-current="page" class="px-3 py-1.5 rounded-full transition-all bg-surface-container-high text-primary font-medium text-xs shadow-[0_0_12px_rgba(245,158,11,0.2)] focus-ring whitespace-nowrap">
+          Meal Generator
+        </a>
+        <a href="recipe-detail.html" class="px-2.5 py-1.5 rounded-full font-medium text-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all focus-ring whitespace-nowrap">
+          Recipe Detail
+        </a>
+        <a href="pantry-staples.html" class="px-2.5 py-1.5 rounded-full font-medium text-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all focus-ring whitespace-nowrap">
+          Pantry &amp; Staples
+        </a>
+        <a href="active-cooking.html" class="px-2.5 py-1.5 rounded-full font-medium text-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all focus-ring whitespace-nowrap">
+          Active Cooking
+        </a>
+        <a href="calorie-tracker.html" class="px-2.5 py-1.5 rounded-full font-medium text-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all focus-ring whitespace-nowrap">
+          Calorie Tracker
+        </a>
+      </nav>
+
+      <!-- Right Nav Status & User Profile -->
+      <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+        <div class="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low border border-surface-container text-on-surface font-label-sm text-[11px] whitespace-nowrap">
+          <span class="text-primary" aria-hidden="true">⚡</span>
+          <span>Ready in &lt;30m</span>
+          <span class="text-outline-variant" aria-hidden="true">|</span>
+          <span class="text-primary" aria-hidden="true">🎯</span>
+          <span>Target: 450 kcal</span>
+        </div>
+
+        <button aria-label="Pantry Expirations &amp; Alerts: 1 item fresh in stock" class="relative p-2 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-all flex items-center justify-center border border-transparent hover:border-surface-container focus-ring flex-shrink-0" type="button" onclick="showFeedback('Pantry alert: Malai Paneer expires in 2 days. Perfect for tonight!')">
+          <span class="material-symbols-outlined text-[20px]">notifications</span>
+          <span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_#F59E0B]"></span>
+        </button>
+
+        <!-- User Profile Avatar & Name -->
+        <div class="flex items-center gap-2 pl-1 flex-shrink-0">
+          <img alt="Portrait of Priya Sharma, household culinary planner" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/40 flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDwRSGq9JYTrhIz_qnNCRqtLH6tc4xYTtxlH6lWS3kNvrfR_O9FGdc5ye3msaEiyQzPKXyoaBWSN8oet-81gCxARg3-xWO9av2g5yDKpg9TSLgzR3w94rN-dD8W0MXNj9phKHNtJDmgkVt6Rf4XBD2O22ceBvz2q4hOHgdl0_WZwo5cpTRWHfqVpEDZQd2v8lQF3NmZg0tauVt0ywbE1_6yajOYdhMGHgsbalNmVfh" width="32" height="32" loading="eager">
+          <div class="hidden md:flex flex-col text-left">
+            <span class="font-label-md text-xs text-on-surface font-semibold leading-tight whitespace-nowrap">Priya Sharma</span>
+            <span class="font-label-sm text-[10px] text-primary/80 leading-tight whitespace-nowrap">Target: 450 kcal | Vegetarian</span>
+          </div>
+        </div>
+
+        <!-- Mobile Navigation Hamburger Button -->
+        <button id="mobile-menu-btn" class="xl:hidden p-2 rounded-lg bg-surface-container-high text-on-surface hover:text-primary focus-ring flex-shrink-0" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="material-symbols-outlined text-[22px]">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobile-nav" class="hidden xl:hidden border-t border-surface-container bg-surface-container-lowest/95 backdrop-blur-xl px-4 py-4 space-y-2">
+      <a href="index.html" class="block px-4 py-2.5 rounded-lg bg-surface-container-high text-primary font-medium">Meal Generator</a>
+      <a href="recipe-detail.html" class="block px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface">Recipe Detail</a>
+      <a href="pantry-staples.html" class="block px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface">Pantry &amp; Staples</a>
+      <a href="active-cooking.html" class="block px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface">Active Cooking</a>
+      <a href="calorie-tracker.html" class="block px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface">Calorie Tracker</a>
+      <a href="privacy.html" class="block px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface">Privacy Policy</a>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="main-content" class="w-full pt-24 bg-background min-h-screen overflow-x-hidden">
+    <div class="flex flex-col w-full max-w-full overflow-x-hidden">
+      <div class="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10">
+        
+        <!-- Top Editorial Header & Stepper Line -->
+        <div class="flex flex-col xl:flex-row xl:items-end justify-between gap-4 sm:gap-6 mb-8 sm:mb-10">
+          <div class="flex flex-col max-w-2xl">
+            <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+              <span class="inline-flex w-2 h-2 rounded-full bg-primary-container shadow-[0_0_10px_#f59e0b]"></span>
+              <span class="font-label-sm text-[11px] uppercase tracking-widest text-primary">Autonomous Culinary Engine</span>
+              <span class="text-outline-variant" aria-hidden="true">•</span>
+              <span class="font-label-sm text-[11px] text-on-surface-variant">Desi Kitchen Intelligence v2.4</span>
+            </div>
+            <h1 class="font-headline-lg text-2xl sm:text-3xl lg:text-headline-lg text-on-surface font-semibold tracking-tight">
+              Assemble Desi Dinner in <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">&lt;30m</span>
+            </h1>
+            <p class="font-body-md text-sm sm:text-base text-on-surface-variant mt-1">
+              Zero-waste healthy Indian meal ideas from fridge leftovers &amp; dabba staples. Strictly calibrated to a 400–550 kcal guardrail.
+            </p>
+          </div>
+
+          <!-- Linear Stepper Pills (Responsively scaled so it never overflows) -->
+          <div class="flex items-center gap-1 sm:gap-1.5 p-1 sm:p-1.5 rounded-full bg-surface-container-low shadow-sm self-start xl:self-auto max-w-full shrink min-w-0" aria-label="Workflow Steps">
+            <div class="flex items-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-1 sm:py-1.5 rounded-full bg-surface-container-high text-primary font-label-md text-[11px] sm:text-xs md:text-sm whitespace-nowrap">
+              <span class="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-primary-container/20 text-primary flex items-center justify-center font-bold text-[10px] sm:text-[11px]">1</span>
+              <span>Pantry</span>
+            </div>
+            <div class="w-2 sm:w-3 md:w-4 h-0.5 bg-surface-container-highest rounded-full flex-shrink-0" aria-hidden="true"></div>
+            <div class="flex items-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-1 sm:py-1.5 rounded-full bg-surface-container-high text-primary font-label-md text-[11px] sm:text-xs md:text-sm whitespace-nowrap">
+              <span class="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-primary-container/20 text-primary flex items-center justify-center font-bold text-[10px] sm:text-[11px]">2</span>
+              <span>Diners</span>
+            </div>
+            <div class="w-2 sm:w-3 md:w-4 h-0.5 bg-surface-container-highest rounded-full flex-shrink-0" aria-hidden="true"></div>
+            <div class="flex items-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-1 sm:py-1.5 rounded-full bg-primary text-on-primary font-label-md text-[11px] sm:text-xs md:text-sm shadow-md shadow-primary-container/20 font-semibold whitespace-nowrap">
+              <span class="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-on-primary/20 text-on-primary flex items-center justify-center font-bold text-[10px] sm:text-[11px]">3</span>
+              <span>Curated Match</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- MAIN 3-STEP FLOW CONTAINER -->
+        <div class="flex flex-col gap-space-xl">
+          
+          <!-- ================= STEP 01: PANTRY ================= -->
+          <section class="flex flex-col bg-surface-container-low rounded-xl p-space-lg md:p-space-xl relative overflow-hidden shadow-xl" aria-labelledby="step1-heading">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-lg">
+              <div class="flex items-center gap-space-md">
+                <div class="w-10 h-10 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary font-headline-sm text-headline-sm font-bold" aria-hidden="true">
+                  01
+                </div>
+                <div>
+                  <h2 id="step1-heading" class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                    What’s in your fridge &amp; dabba?
+                  </h2>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Select from fresh produce, dairy, or run computer-vision scanner on your sabzi tray.
+                  </p>
+                </div>
+              </div>
+              <span class="self-start md:self-auto px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm" id="staples-count">
+                7 Ingredients Logged
+              </span>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+              
+              <!-- Snap Camera Card (Checklist Item 18: Clear CTA) -->
+              <div class="lg:col-span-4 flex flex-col justify-between p-space-md rounded-xl bg-surface-container-high group cursor-pointer hover:bg-surface-variant transition-all relative overflow-hidden focus-ring" tabindex="0" role="button" aria-label="Snap fridge or sabzi basket to scan ingredients with AI vision" onclick="triggerCameraScan()">
+                <div class="flex items-start justify-between">
+                  <div class="w-12 h-12 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+                    <span class="material-symbols-outlined text-[28px]">photo_camera</span>
+                  </div>
+                  <span class="px-2 py-0.5 rounded-full bg-primary-container/15 text-primary font-label-sm text-label-sm font-medium">
+                    AI Vision
+                  </span>
+                </div>
+                <div class="my-space-md">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface font-medium leading-snug">
+                    Snap Fridge or Sabzi Basket
+                  </h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                    Point at your crisper drawer or counter dabbas to instantly index loose veggies and herbs.
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 text-primary font-label-md text-label-md group-hover:translate-x-1 transition-transform">
+                  <span>Scan shelf instantly</span>
+                  <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                </div>
+              </div>
+
+              <!-- Quick Add Staples Grid + Search -->
+              <div class="lg:col-span-8 flex flex-col justify-between bg-surface-container-lowest p-space-md rounded-xl">
+                <div>
+                  <div class="flex flex-wrap items-center justify-between gap-2 mb-space-sm">
+                    <span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">
+                      Quick Add Staples in Stock
+                    </span>
+                    <a href="pantry-staples.html" class="font-label-sm text-label-sm text-primary flex items-center gap-1 hover:underline focus-ring rounded whitespace-nowrap">
+                      <span class="material-symbols-outlined text-[14px]">tune</span> Manage All Dabbas
+                    </a>
+                  </div>
+
+                  <!-- Indian Staples Pills -->
+                  <div class="flex flex-wrap gap-2 mb-space-md" id="staples-container">
+                    <button class="group flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-high text-on-surface hover:text-primary font-body-sm text-body-sm transition-all staple-pill focus-ring" data-name="Paneer (200g)" type="button" aria-pressed="true">
+                      <span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                      <span>Paneer (200g)</span>
+                      <span class="material-symbols-outlined text-[16px] text-primary">check</span>
+                    </button>
+                    <button class="group flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-high text-on-surface hover:text-primary font-body-sm text-body-sm transition-all staple-pill focus-ring" data-name="Palak / Spinach" type="button" aria-pressed="true">
+                      <span class="w-2 h-2 rounded-full bg-secondary"></span>
+                      <span>Palak / Spinach</span>
+                      <span class="material-symbols-outlined text-[16px] text-primary">check</span>
+                    </button>
+                    <button class="group flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-high text-on-surface hover:text-primary font-body-sm text-body-sm transition-all staple-pill focus-ring" data-name="Matar (Green Peas)" type="button" aria-pressed="true">
+                      <span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                      <span>Matar (Green Peas)</span>
+                      <span class="material-symbols-outlined text-[16px] text-primary">check</span>
+                    </button>
+                    <button class="group flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-high text-on-surface hover:text-primary font-body-sm text-body-sm transition-all staple-pill focus-ring" data-name="Atta / Whole Wheat" type="button" aria-pressed="true">
+                      <span class="w-2 h-2 rounded-full bg-outline"></span>
+                      <span>Atta / Whole Wheat</span>
+                      <span class="material-symbols-outlined text-[16px] text-primary">check</span>
+                    </button>
+                    <button class="group flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-high text-on-surface hover:text-primary font-body-sm text-body-sm transition-all staple-pill focus-ring" data-name="Dahi / Curd" type="button" aria-pressed="true">
+                      <span class="w-2 h-2 rounded-full bg-on-surface-variant"></span>
+                      <span>Dahi / Curd</span>
+                      <span class="material-symbols-outlined text-[16px] text-primary">check</span>
+                    </button>
+                    <button class="group flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-high text-on-surface hover:text-primary font-body-sm text-body-sm transition-all staple-pill focus-ring" data-name="Basmati / Brown Rice" type="button" aria-pressed="false">
+                      <span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+                      <span>Basmati / Brown Rice</span>
+                      <span class="material-symbols-outlined text-[16px] text-outline-variant group-hover:text-primary">add</span>
+                    </button>
+                    <button class="group flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-high text-on-surface hover:text-primary font-body-sm text-body-sm transition-all staple-pill focus-ring" data-name="Moong Dal" type="button" aria-pressed="false">
+                      <span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+                      <span>Moong Dal</span>
+                      <span class="material-symbols-outlined text-[16px] text-outline-variant group-hover:text-primary">add</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Checklist Items 16 & 17: Working Form & Form Feedback -->
+                <form id="ingredient-form" class="flex items-center gap-space-sm pt-space-xs" onsubmit="event.preventDefault(); handleAddIngredient();">
+                  <div class="relative flex-1 min-w-0">
+                    <label for="custom-ingredient-input" class="sr-only">Type custom ingredient name</label>
+                    <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline-variant text-[20px]" aria-hidden="true">search</span>
+                    <input class="w-full min-w-0 bg-surface-container-high rounded-lg pl-10 pr-4 py-2.5 text-on-surface placeholder:text-outline text-body-sm focus:outline-none focus:ring-1 focus:ring-primary focus:bg-surface-variant transition-all font-body-sm" id="custom-ingredient-input" placeholder="Type other ingredients (e.g. Kasuri Methi, Ginger, Tomato...)" type="text" autocomplete="off">
+                  </div>
+                  <button class="px-4 sm:px-5 py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1.5 transition-all hover:bg-secondary focus-ring flex-shrink-0" id="add-ingredient-btn" type="submit">
+                    <span class="material-symbols-outlined text-[18px]">add</span>
+                    <span>Add</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </section>
+
+          <!-- ================= STEP 02: DINERS ================= -->
+          <section class="flex flex-col bg-surface-container-low rounded-xl p-space-lg md:p-space-xl relative shadow-xl" aria-labelledby="step2-heading">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-lg">
+              <div class="flex items-center gap-space-md">
+                <div class="w-10 h-10 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary font-headline-sm text-headline-sm font-bold" aria-hidden="true">
+                  02
+                </div>
+                <div>
+                  <h2 id="step2-heading" class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                    Who’s eating tonight?
+                  </h2>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Indian Family Household Profiles &amp; simultaneous dietary harmonizer.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Auto-Harmonizing Indicator Badge -->
+              <div class="flex flex-wrap sm:flex-nowrap items-center gap-1.5 sm:gap-2 px-3 py-1.5 rounded-xl sm:rounded-full bg-surface-container-high text-on-surface font-label-sm text-xs sm:text-label-sm" id="harmonize-badge">
+                <span class="w-2 h-2 rounded-full bg-primary-container animate-pulse flex-shrink-0"></span>
+                <span class="text-on-surface-variant">Auto-harmonizing:</span>
+                <span class="text-primary font-semibold">Pure Vegetarian + Low GI / Low Oil</span>
+              </div>
+            </div>
+
+            <!-- Household Members 3 Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+              
+              <!-- Member 1: Priya -->
+              <div class="p-space-md rounded-xl bg-surface-container-high relative flex flex-col justify-between transition-all cursor-pointer member-card shadow-lg shadow-primary-container/5 focus-ring" tabindex="0" role="button" aria-pressed="true" aria-label="Toggle Priya Sharma profile, currently active">
+                <div>
+                  <div class="flex items-start justify-between mb-space-sm">
+                    <div class="flex items-center gap-space-sm">
+                      <div class="w-11 h-11 rounded-full bg-gradient-to-br from-primary to-secondary p-0.5">
+                        <img alt="Priya Sharma, Lacto-Vegetarian Planner" class="w-full h-full rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDwRSGq9JYTrhIz_qnNCRqtLH6tc4xYTtxlH6lWS3kNvrfR_O9FGdc5ye3msaEiyQzPKXyoaBWSN8oet-81gCxARg3-xWO9av2g5yDKpg9TSLgzR3w94rN-dD8W0MXNj9phKHNtJDmgkVt6Rf4XBD2O22ceBvz2q4hOHgdl0_WZwo5cpTRWHfqVpEDZQd2v8lQF3NmZg0tauVt0ywbE1_6yajOYdhMGHgsbalNmVfh" width="44" height="44" loading="lazy">
+                      </div>
+                      <div>
+                        <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-tight">Priya (Self)</h3>
+                        <span class="font-label-sm text-label-sm text-primary">Primary Planner</span>
+                      </div>
+                    </div>
+                    <div class="w-6 h-6 rounded-full bg-primary-container text-surface-container-lowest flex items-center justify-center">
+                      <span class="material-symbols-outlined text-[16px] font-bold">check</span>
+                    </div>
+                  </div>
+                  <div class="space-y-1.5 my-space-sm text-body-sm font-body-sm">
+                    <div class="flex items-center justify-between">
+                      <span class="text-on-surface-variant">Dietary Preference:</span>
+                      <span class="text-on-surface font-medium">Lacto-Vegetarian</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <span class="text-on-surface-variant">Focus:</span>
+                      <span class="text-primary font-medium">High-Protein (25g+)</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <span class="text-on-surface-variant">Target Calorie:</span>
+                      <span class="text-on-surface font-medium font-label-sm">~450 kcal</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-space-sm flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant border-t border-surface-container/40">
+                  <span>Portion scale: <strong>1.0x (Standard)</strong></span>
+                  <span class="text-primary font-bold">ACTIVE</span>
+                </div>
+              </div>
+
+              <!-- Member 2: Rahul -->
+              <div class="p-space-md rounded-xl bg-surface-container-high relative flex flex-col justify-between transition-all cursor-pointer member-card shadow-lg shadow-primary-container/5 focus-ring" tabindex="0" role="button" aria-pressed="true" aria-label="Toggle Rahul profile, currently active">
+                <div>
+                  <div class="flex items-start justify-between mb-space-sm">
+                    <div class="flex items-center gap-space-sm">
+                      <div class="w-11 h-11 rounded-full bg-gradient-to-br from-secondary to-amber-600 p-0.5">
+                        <img alt="Portrait of Rahul Sharma, Husband" class="w-full h-full rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2Z-P7vzoZv_Y6OvrVXpq87bzjOUCagedZoNuRROOrxSHMTgIaCWQZzMnWOTrqouc2-336fu7SRe-XEmqNKbWo8iPGdJrprkmvh2TFagUEn2RIshp9gywLCG4QQy5qs7iHVkpP5OpdjjZOOf7ePkOIhKGVCPPv1lBrRYT6nlwGqsu6ZX6g9u0SKjXcPWQ-CBCTHjgr0d_Sr2Sn7SEm_ztvAYu971QqE58yxwJHvWfs" width="44" height="44" loading="lazy">
+                      </div>
+                      <div>
+                        <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-tight">Rahul</h3>
+                        <span class="font-label-sm text-label-sm text-secondary">Husband</span>
+                      </div>
+                    </div>
+                    <div class="w-6 h-6 rounded-full bg-primary-container text-surface-container-lowest flex items-center justify-center">
+                      <span class="material-symbols-outlined text-[16px] font-bold">check</span>
+                    </div>
+                  </div>
+                  <div class="space-y-1.5 my-space-sm text-body-sm font-body-sm">
+                    <div class="flex items-center justify-between">
+                      <span class="text-on-surface-variant">Dietary Preference:</span>
+                      <span class="text-on-surface font-medium">Low-Carb / Clean</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <span class="text-on-surface-variant">Special Constraint:</span>
+                      <span class="text-secondary font-medium">Diabetic-friendly</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <span class="text-on-surface-variant">Target Calorie:</span>
+                      <span class="text-on-surface font-medium font-label-sm">~520 kcal</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-space-sm flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant border-t border-surface-container/40">
+                  <span>Portion scale: <strong>1.2x (Generous)</strong></span>
+                  <span class="text-primary font-bold">ACTIVE</span>
+                </div>
+              </div>
+
+              <!-- Member 3: Aarav & Dadi -->
+              <div class="p-space-md rounded-xl bg-surface-container-lowest opacity-75 hover:opacity-100 relative flex flex-col justify-between transition-all cursor-pointer member-card focus-ring" tabindex="0" role="button" aria-pressed="false" aria-label="Toggle Aarav and Dadi profile, currently inactive">
+                <div>
+                  <div class="flex items-start justify-between mb-space-sm">
+                    <div class="flex items-center gap-space-sm">
+                      <div class="w-11 h-11 rounded-full bg-surface-container-high flex items-center justify-center text-outline-variant">
+                        <span class="material-symbols-outlined text-[24px]">family_restroom</span>
+                      </div>
+                      <div>
+                        <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-tight">Aarav &amp; Dadi</h3>
+                        <span class="font-label-sm text-label-sm text-outline-variant">Son (8y) &amp; Grandmother</span>
+                      </div>
+                    </div>
+                    <div class="w-6 h-6 rounded-full bg-surface-container-high text-outline-variant flex items-center justify-center">
+                      <span class="material-symbols-outlined text-[16px]">add</span>
+                    </div>
+                  </div>
+                  <div class="space-y-1.5 my-space-sm text-body-sm font-body-sm">
+                    <div class="flex items-center justify-between">
+                      <span class="text-on-surface-variant">Spice Tolerance:</span>
+                      <span class="text-on-surface font-medium">Mild / Zero Chili</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <span class="text-on-surface-variant">Restriction:</span>
+                      <span class="text-on-surface font-medium">Low Sodium / Satvik</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <span class="text-on-surface-variant">Target Calorie:</span>
+                      <span class="text-on-surface font-medium font-label-sm">~380 kcal</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-space-sm flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant border-t border-surface-container/40">
+                  <span>Portion scale: <strong>0.8x (Light)</strong></span>
+                  <span class="text-outline-variant">INACTIVE</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PRD v2.3 Feature: Dynamic Headcount & Calorie Target Slider (300-900 kcal) -->
+            <div class="mt-space-md p-space-md rounded-xl bg-surface-container-lowest border border-surface-container/60 flex flex-col md:flex-row items-center justify-between gap-space-lg">
+              
+              <!-- Headcount Selector (PRD Section 5) -->
+              <div class="flex flex-col gap-2 w-full md:w-auto">
+                <span class="font-label-sm text-label-sm uppercase tracking-wider text-outline flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-[16px] text-primary">groups</span>
+                  Headcount Scaling
+                </span>
+                <div class="flex flex-wrap items-center gap-1.5" id="headcount-pills">
+                  <button type="button" class="px-3.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface hover:text-primary font-label-sm text-label-sm headcount-pill focus-ring" data-count="1" onclick="selectHeadcount(1, this)">1 Person</button>
+                  <button type="button" class="px-3.5 py-1.5 rounded-lg bg-primary text-surface-container-lowest font-label-sm text-label-sm font-bold headcount-pill focus-ring" data-count="2" onclick="selectHeadcount(2, this)">2 People</button>
+                  <button type="button" class="px-3.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface hover:text-primary font-label-sm text-label-sm headcount-pill focus-ring" data-count="3" onclick="selectHeadcount(3, this)">3 People</button>
+                  <button type="button" class="px-3.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface hover:text-primary font-label-sm text-label-sm headcount-pill focus-ring" data-count="4" onclick="selectHeadcount(4, this)">4+ Family</button>
+                </div>
+              </div>
+
+              <!-- Calorie Ceiling Slider: 300 - 900 kcal (PRD Section 2, 5, 8) -->
+              <div class="flex flex-col gap-2 w-full md:flex-1 max-w-md">
+                <div class="flex items-center justify-between">
+                  <label for="calorie-slider" class="font-label-sm text-label-sm uppercase tracking-wider text-outline flex items-center gap-1.5">
+                    <span class="material-symbols-outlined text-[16px] text-secondary">tune</span>
+                    Per-Serving Calorie Target
+                  </label>
+                  <span class="font-label-md text-label-md text-primary font-bold px-2.5 py-0.5 rounded bg-surface-container-high" id="calorie-slider-val">
+                    450 kcal
+                  </span>
+                </div>
+                <input type="range" id="calorie-slider" min="300" max="900" step="25" value="450" class="w-full accent-primary cursor-pointer" oninput="handleCalorieSlider(this.value)">
+                <div class="flex justify-between text-[11px] font-label-sm text-outline">
+                  <span>300 kcal (Lean)</span>
+                  <span class="text-primary font-semibold">400–550 kcal (Guardrail)</span>
+                  <span>900 kcal (High)</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- PRD v2.3 Strict Dietary & Allergen Toggles (PRD Section 5 & 7) -->
+            <div class="mt-space-sm p-space-sm rounded-lg bg-surface-container flex flex-wrap items-center justify-between gap-2">
+              <span class="font-label-sm text-label-sm text-outline uppercase tracking-wider pl-1">Strict Dietary Filters:</span>
+              <div class="flex flex-wrap gap-1.5" id="dietary-filter-chips">
+                <button type="button" class="diet-chip px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface hover:text-primary font-label-sm text-label-sm flex items-center gap-1 transition-all focus-ring" data-diet="Vegetarian" onclick="toggleDietChip(this)">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                  <span>Pure Veg</span>
+                </button>
+                <button type="button" class="diet-chip px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface hover:text-primary font-label-sm text-label-sm flex items-center gap-1 transition-all focus-ring" data-diet="Low-GI" onclick="toggleDietChip(this)">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  <span>Low-GI / Diabetic</span>
+                </button>
+                <button type="button" class="diet-chip px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface hover:text-primary font-label-sm text-label-sm flex items-center gap-1 transition-all focus-ring" data-diet="Gluten-Free" onclick="toggleDietChip(this)">
+                  <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  <span>Gluten-Free</span>
+                </button>
+                <button type="button" class="diet-chip px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface hover:text-primary font-label-sm text-label-sm flex items-center gap-1 transition-all focus-ring" data-diet="Nut-Allergy" onclick="toggleDietChip(this)">
+                  <span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                  <span>Nut-Free</span>
+                </button>
+                <button type="button" class="diet-chip px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface hover:text-primary font-label-sm text-label-sm flex items-center gap-1 transition-all focus-ring" data-diet="Satvik" onclick="toggleDietChip(this)">
+                  <span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  <span>Satvik (No Onion/Garlic)</span>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <!-- ================= STEP 03: MATCH ================= -->
+          <section class="flex flex-col bg-surface-container-low rounded-xl p-space-lg md:p-space-xl relative overflow-hidden shadow-2xl" aria-labelledby="step3-heading">
+            <div class="absolute inset-0 overflow-hidden pointer-events-none rounded-xl" aria-hidden="true">
+              <div class="absolute right-0 top-0 w-80 h-80 bg-primary-container/10 rounded-full blur-3xl"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-lg relative z-10">
+              <div class="flex items-center gap-space-md">
+                <div class="w-10 h-10 rounded-xl bg-primary text-on-primary font-headline-sm text-headline-sm flex items-center justify-center font-bold flex-shrink-0" aria-hidden="true">
+                  03
+                </div>
+                <div>
+                  <div class="flex flex-wrap items-center gap-2">
+                    <h2 id="step3-heading" class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                      Instant Recipe Results
+                    </h2>
+                    <span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm font-bold animate-pulse whitespace-nowrap">
+                      Ready in 18 mins
+                    </span>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Synthesized live from your dabba inventory &amp; Rahul + Priya macro requirements.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Filter / Sort Controls -->
+              <div class="flex flex-wrap items-center gap-1.5 self-start md:self-auto p-1 bg-surface-container-lowest rounded-2xl sm:rounded-full border border-surface-container">
+                <span class="flex items-center gap-1 pl-2.5 pr-1.5 py-1 text-outline font-label-sm text-[11px] uppercase tracking-wider">
+                  <span class="material-symbols-outlined text-[14px] text-primary" aria-hidden="true">swap_vert</span>Sort:
+                </span>
+                <button type="button" class="flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold shadow-sm focus-ring">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                  <span>Prep Time (&lt;20m)</span>
+                </button>
+                <button type="button" class="flex items-center gap-1 px-3 py-1 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-sm text-label-sm transition-all focus-ring" onclick="showFeedback('Filtered by Lowest Calories (380 kcal)')">
+                  <span>Lowest Calories</span>
+                </button>
+                <button type="button" class="flex items-center gap-1 px-3 py-1 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-sm text-label-sm transition-all focus-ring" onclick="showFeedback('Filtered by Highest Protein (26.5g)')">
+                  <span>Highest Protein</span>
+                </button>
+              </div>
+
+              <button class="self-start md:self-auto px-3.5 sm:px-4 py-2 rounded-full bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-sm text-xs sm:text-label-sm flex items-center gap-1.5 sm:gap-2 transition-all focus-ring whitespace-nowrap" type="button" onclick="showFeedback('Regenerated recipe matches with current dabba inventory')">
+                <span class="material-symbols-outlined text-[16px] text-primary">autorenew</span>
+                <span class="hidden sm:inline">Regenerate (2 other matches)</span>
+                <span class="sm:hidden">Regenerate Matches (2)</span>
+              </button>
+            </div>
+
+            <!-- Bento Grid: Visual Dish + Telemetry -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg relative z-10">
+              
+              <!-- Dish Visual Card (Left) -->
+              <article class="lg:col-span-6 flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-xl relative group">
+                <div class="relative w-full h-80 sm:h-96 overflow-hidden">
+                  <img alt="Tawa Paneer Bhurji with warm phulkas and roasted jeera raita on Indian rustic dining table" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPC9v8ss_Q6h6HMVHHSAuCyOYdo6Wog-r810UWC9XeeFAvO_U8j0isjbLoib-WEntGrr_-mB7B41zX7V6YFyaaSCa0zP-FTZlX1khiTw5ZwTVe1MXfda6ZwgInxfWTRfCCJHweqyrn-CNnxl81GyHoIm07BSZ0ED707dM7N4eSW6gRiyioHftrUEb7NVXX7XGzBavnJo3-3WaLq-fgIpOvLEmOiX5nj0n1FOgcpfm4" width="600" height="384" loading="eager">
+                  <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+                  
+                  <div class="absolute top-4 left-4 flex flex-wrap gap-2">
+                    <span class="px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1.5 shadow-lg">
+                      <span class="material-symbols-outlined text-[14px]">stars</span>
+                      Chef Match #1 • 98% Compatibility
+                    </span>
+                    <span class="px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-secondary font-label-sm text-label-sm flex items-center gap-1">
+                      ⚡ Fast &amp; Healthy Indian
+                    </span>
+                  </div>
+
+                  <div class="absolute bottom-4 right-4 flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest/90 backdrop-blur-md">
+                    <div class="w-4 h-4 rounded-sm border-2 border-emerald-500 p-0.5 flex items-center justify-center">
+                      <div class="w-2 h-2 rounded-full bg-emerald-500"></div>
+                    </div>
+                    <span class="font-label-sm text-label-sm text-on-surface font-bold uppercase tracking-wider">100% Pure Veg</span>
+                  </div>
+                </div>
+
+                <div class="p-space-md flex flex-col justify-between flex-1">
+                  <div>
+                    <h3 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">
+                      Tawa Paneer Bhurji with Multigrain Phulkas &amp; Roasted Jeera Raita
+                    </h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed">
+                      Succulent crumbled paneer tossed on a cast-iron tawa with quick-caramelized onions, bell peppers, fresh palak ribbons, and dry roasted jeera. Paired with soft phulkas and probiotic whipped dahi.
+                    </p>
+                  </div>
+
+                  <!-- Matched Inventory Section -->
+                  <div class="mt-space-md pt-space-sm bg-surface-container-low p-space-sm rounded-lg">
+                    <div class="flex items-center gap-2 mb-1.5">
+                      <span class="material-symbols-outlined text-[18px] text-primary" aria-hidden="true">inventory_2</span>
+                      <span class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider">Matched Inventory Check</span>
+                    </div>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">
+                      <strong class="text-primary">Found (4):</strong> Fresh malai paneer, baby spinach, whole wheat atta, homemade dahi. <span class="text-outline">Assumed: Haldi, jeera, mustard oil spray, rock salt.</span>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Recipe Intelligence & Telemetry (Right) -->
+              <div class="lg:col-span-6 flex flex-col justify-between gap-space-md">
+                
+                <!-- 4 Quick Telemetry Metric Tiles -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+                  <div class="p-space-sm rounded-xl bg-surface-container-highest flex flex-col justify-center items-center text-center">
+                    <span class="material-symbols-outlined text-[20px] text-primary mb-1" aria-hidden="true">timer</span>
+                    <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Time</span>
+                    <span class="font-headline-sm text-headline-sm text-on-surface font-bold">18 Mins</span>
+                    <span class="font-label-sm text-[10px] text-primary/80">Prep 6m • Cook 12m</span>
+                  </div>
+                  <div class="p-space-sm rounded-xl bg-surface-container-highest flex flex-col justify-center items-center text-center">
+                    <span class="material-symbols-outlined text-[20px] text-secondary mb-1" aria-hidden="true">local_fire_department</span>
+                    <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Cal / Serving</span>
+                    <span class="font-headline-sm text-headline-sm text-on-surface font-bold">440 kcal</span>
+                    <span class="font-label-sm text-[10px] text-secondary/80">Within 450 Target</span>
+                  </div>
+                  <div class="p-space-sm rounded-xl bg-surface-container-highest flex flex-col justify-center items-center text-center">
+                    <span class="material-symbols-outlined text-[20px] text-tertiary mb-1" aria-hidden="true">fitness_center</span>
+                    <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Net Protein</span>
+                    <span class="font-headline-sm text-headline-sm text-on-surface font-bold">26.5 g</span>
+                    <span class="font-label-sm text-[10px] text-tertiary/80">Vegetarian High</span>
+                  </div>
+                  <div class="p-space-sm rounded-xl bg-surface-container-highest flex flex-col justify-center items-center text-center">
+                    <span class="material-symbols-outlined text-[20px] text-primary mb-1" aria-hidden="true">health_and_safety</span>
+                    <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Glycemic Index</span>
+                    <span class="font-headline-sm text-headline-sm text-on-surface font-bold">Low GI</span>
+                    <span class="font-label-sm text-[10px] text-primary/80">Diabetic Safe</span>
+                  </div>
+                </div>
+
+                <!-- Macro Nutritional Distribution Breakdown Card -->
+                <div class="p-space-md rounded-xl bg-surface-container-highest">
+                  <div class="flex items-center justify-between mb-space-sm">
+                    <span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Macro Distribution per Plate</span>
+                    <span class="font-label-sm text-label-sm text-primary font-semibold">440 kcal (Target: 450)</span>
+                  </div>
+                  <div class="w-full h-3 rounded-full bg-surface-container flex overflow-hidden gap-0.5 mb-space-sm" role="progressbar" aria-label="Macro breakdown: 25% protein, 45% carbs, 30% healthy fats" aria-valuenow="440" aria-valuemin="0" aria-valuemax="450">
+                    <div class="h-full bg-primary-container" style="width: 25%" title="Protein: 25%"></div>
+                    <div class="h-full bg-secondary" style="width: 45%" title="Complex Carbs: 45%"></div>
+                    <div class="h-full bg-tertiary-container" style="width: 30%" title="Clean Fats: 30%"></div>
+                  </div>
+                  <div class="grid grid-cols-3 gap-2 text-center pt-1 font-label-sm text-label-sm">
+                    <div class="flex flex-col">
+                      <span class="text-on-surface font-semibold flex items-center justify-center gap-1">
+                        <span class="w-2 h-2 rounded-full bg-primary-container"></span> 26.5g Protein
+                      </span>
+                      <span class="text-on-surface-variant text-[11px]">Paneer &amp; Curd</span>
+                    </div>
+                    <div class="flex flex-col">
+                      <span class="text-on-surface font-semibold flex items-center justify-center gap-1">
+                        <span class="w-2 h-2 rounded-full bg-secondary"></span> 42.0g Carbs
+                      </span>
+                      <span class="text-on-surface-variant text-[11px]">Whole Grain Phulka</span>
+                    </div>
+                    <div class="flex flex-col">
+                      <span class="text-on-surface font-semibold flex items-center justify-center gap-1">
+                        <span class="w-2 h-2 rounded-full bg-tertiary-container"></span> 14.8g Clean Fats
+                      </span>
+                      <span class="text-on-surface-variant text-[11px]">Cold Mustard Oil</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Instant Cook Steps Snapshot -->
+                <div class="p-space-md rounded-xl bg-surface-container-highest">
+                  <div class="flex items-center justify-between mb-space-sm">
+                    <span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Zero-Fuss Prep Sequence</span>
+                    <span class="font-label-sm text-label-sm text-outline-variant">Single Skillet Cook</span>
+                  </div>
+                  <ol class="space-y-2.5 font-body-sm text-body-sm list-none p-0 m-0">
+                    <li class="flex items-start gap-space-sm">
+                      <span class="w-5 h-5 rounded-full bg-surface-container-high text-primary flex-shrink-0 flex items-center justify-center font-label-sm text-[11px] font-bold">1</span>
+                      <span class="text-on-surface"><strong class="text-primary font-medium">Tawa Heat (3m):</strong> Sear chopped onions, green chili, and jeera in 1 tsp oil on high flame until fragrant.</span>
+                    </li>
+                    <li class="flex items-start gap-space-sm">
+                      <span class="w-5 h-5 rounded-full bg-surface-container-high text-primary flex-shrink-0 flex items-center justify-center font-label-sm text-[11px] font-bold">2</span>
+                      <span class="text-on-surface"><strong class="text-primary font-medium">Crumble &amp; Fold (6m):</strong> Toss crushed paneer with palak ribbons, haldi, pav bhaji masala, and salt.</span>
+                    </li>
+                    <li class="flex items-start gap-space-sm">
+                      <span class="w-5 h-5 rounded-full bg-surface-container-high text-primary flex-shrink-0 flex items-center justify-center font-label-sm text-[11px] font-bold">3</span>
+                      <span class="text-on-surface"><strong class="text-primary font-medium">Plate &amp; Raita (4m):</strong> Whip 3 tbsp cold dahi with roasted cumin and serve with warm phulkas.</span>
+                    </li>
+                  </ol>
+                </div>
+
+                <!-- Actions & Execution CTA (Checklist Item 18) -->
+                <div class="flex flex-col sm:flex-row items-center gap-space-sm pt-space-xs">
+                  <a href="active-cooking.html" class="w-full sm:flex-1 py-3.5 px-6 rounded-xl bg-primary text-on-primary font-headline-sm text-headline-sm font-semibold hover:bg-secondary transition-all shadow-lg shadow-primary-container/30 flex items-center justify-center gap-2 focus-ring text-center">
+                    <span class="material-symbols-outlined text-[22px]">play_circle</span>
+                    <span>Start Cooking (18m)</span>
+                  </a>
+                  <a href="recipe-detail.html" class="w-full sm:w-auto py-3.5 px-6 rounded-xl bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-all flex items-center justify-center gap-2 focus-ring text-center">
+                    <span class="material-symbols-outlined text-[18px]">receipt_long</span>
+                    <span>View Full Recipe Steps</span>
+                  </a>
+                </div>
+
+                <!-- Calorie Tracker Auto-log Notice -->
+                <a href="calorie-tracker.html" class="flex items-center justify-center sm:justify-start gap-2 text-outline font-label-sm text-label-sm hover:text-primary transition-colors focus-ring rounded py-1">
+                  <span class="material-symbols-outlined text-[16px] text-primary">sync</span>
+                  <span>Auto-logs to Priya &amp; Rahul's daily calorie tracker upon completion &rarr;</span>
+                </a>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer with Full Links (Checklist Item 9 & 11) -->
+  <footer class="w-full bg-surface-container-lowest border-t border-surface-container mt-space-xl">
+    <div class="w-full max-w-[1440px] mx-auto px-gutter py-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-label-md text-label-md">
+      <div class="flex flex-wrap items-center gap-space-sm text-center md:text-left">
+        <span>🎯 <strong class="text-on-surface">Calorie Guardrail:</strong> 400–550 kcal per serving.</span>
+        <span class="hidden sm:inline text-outline-variant">•</span>
+        <span>⏱️ Total prep &amp; cook strictly under 30 minutes.</span>
+      </div>
+      <div class="flex items-center gap-space-md flex-wrap justify-center">
+        <a href="privacy.html" class="hover:text-primary transition-colors focus-ring rounded">Privacy Policy</a>
+        <span class="text-outline-variant">•</span>
+        <a href="calorie-tracker.html" class="hover:text-primary transition-colors focus-ring rounded">Calorie Tracker</a>
+        <span class="text-outline-variant">•</span>
+        <span class="px-2.5 py-0.5 rounded-full bg-surface-container-high border border-surface-container text-primary font-label-sm text-label-sm">India Edition</span>
+        <span>© 2026 PantryChef India. Clean nutrition.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Logic -->
+  <script>
+    // Toast Feedback System
+    function showFeedback(msg, icon = 'check_circle') {
+      const toast = document.getElementById('toast-banner');
+      const text = document.getElementById('toast-message');
+      const iconEl = document.getElementById('toast-icon');
+      if (toast && text && iconEl) {
+        text.textContent = msg;
+        iconEl.textContent = icon;
+        toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+        setTimeout(() => {
+          toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+        }, 3200);
+      }
+    }
+
+    // Camera Scan Trigger
+    function triggerCameraScan() {
+      showFeedback('Accessing AI Vision scanner... 4 items indexed!', 'photo_camera');
+    }
+
+    // Mobile Menu Toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileNav = document.getElementById('mobile-nav');
+    if (mobileBtn && mobileNav) {
+      mobileBtn.addEventListener('click', () => {
+        const expanded = mobileBtn.getAttribute('aria-expanded') === 'true';
+        mobileBtn.setAttribute('aria-expanded', !expanded);
+        mobileNav.classList.toggle('hidden');
+      });
+    }
+
+    // Staple selection pills
+    document.querySelectorAll('.staple-pill').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const icon = btn.querySelector('.material-symbols-outlined');
+        const name = btn.getAttribute('data-name');
+        if (icon.textContent === 'check') {
+          icon.textContent = 'add';
+          icon.classList.remove('text-primary');
+          icon.classList.add('text-outline-variant');
+          btn.classList.add('opacity-60');
+          btn.setAttribute('aria-pressed', 'false');
+          showFeedback(`Removed ${name} from active inventory`);
+        } else {
+          icon.textContent = 'check';
+          icon.classList.add('text-primary');
+          icon.classList.remove('text-outline-variant');
+          btn.classList.remove('opacity-60');
+          btn.setAttribute('aria-pressed', 'true');
+          showFeedback(`Added ${name} to active inventory`);
+        }
+      });
+    });
+
+    // Custom Ingredient Adder Form
+    function handleAddIngredient() {
+      const input = document.getElementById('custom-ingredient-input');
+      const container = document.getElementById('staples-container');
+      if (!input || !container) return;
+      const val = input.value.trim();
+      if (!val) {
+        showFeedback('Please type an ingredient name first', 'warning');
+        return;
+      }
+
+      const newPill = document.createElement('button');
+      newPill.type = 'button';
+      newPill.className = 'group flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-high text-on-surface hover:text-primary font-body-sm text-body-sm transition-all staple-pill focus-ring';
+      newPill.setAttribute('data-name', val);
+      newPill.setAttribute('aria-pressed', 'true');
+      newPill.innerHTML = `
+        <span class="w-2 h-2 rounded-full bg-primary-container"></span>
+        <span>${val}</span>
+        <span class="material-symbols-outlined text-[16px] text-primary">check</span>
+      `;
+      newPill.addEventListener('click', () => {
+        newPill.remove();
+        showFeedback(`Removed ${val}`);
+      });
+      container.appendChild(newPill);
+      showFeedback(`Added ${val} to dinner formulation!`);
+      input.value = '';
+    }
+
+    // Member card toggle
+    document.querySelectorAll('.member-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const isPressed = card.getAttribute('aria-pressed') === 'true';
+        card.setAttribute('aria-pressed', !isPressed);
+        const statusSpan = card.querySelector('.pt-space-sm span:last-child');
+        const checkIcon = card.querySelector('.w-6.h-6 span');
+        const checkWrap = card.querySelector('.w-6.h-6');
+        
+        if (isPressed) {
+          card.classList.add('opacity-60');
+          if (statusSpan) {
+            statusSpan.textContent = 'INACTIVE';
+            statusSpan.className = 'text-outline-variant';
+          }
+          if (checkIcon) checkIcon.textContent = 'add';
+          if (checkWrap) {
+            checkWrap.className = 'w-6 h-6 rounded-full bg-surface-container-high text-outline-variant flex items-center justify-center';
+          }
+          showFeedback('Profile deactivated for dinner calculation');
+        } else {
+          card.classList.remove('opacity-60');
+          if (statusSpan) {
+            statusSpan.textContent = 'ACTIVE';
+            statusSpan.className = 'text-primary font-bold';
+          }
+          if (checkIcon) checkIcon.textContent = 'check';
+          if (checkWrap) {
+            checkWrap.className = 'w-6 h-6 rounded-full bg-primary-container text-surface-container-lowest flex items-center justify-center';
+          }
+          showFeedback('Profile activated for dinner calculation');
+        }
+      });
+    });
+
+    // PRD v2.3 Headcount Selector
+    function selectHeadcount(count, btn) {
+      document.querySelectorAll('.headcount-pill').forEach(b => {
+        b.classList.remove('bg-primary', 'text-surface-container-lowest', 'font-bold');
+        b.classList.add('bg-surface-container-high', 'text-on-surface');
+      });
+      btn.classList.add('bg-primary', 'text-surface-container-lowest', 'font-bold');
+      btn.classList.remove('bg-surface-container-high', 'text-on-surface');
+      showFeedback(`Headcount scaled for ${count} diner${count > 1 ? 's' : ''}! Portion ratios auto-balanced.`);
+    }
+
+    // PRD v2.3 Calorie Target Slider
+    function handleCalorieSlider(val) {
+      const display = document.getElementById('calorie-slider-val');
+      if (display) {
+        display.textContent = `${val} kcal`;
+      }
+      if (val < 380) {
+        showFeedback(`Calorie target: ${val} kcal (Very lean - prioritizing salads & light proteins)`);
+      } else if (val > 650) {
+        showFeedback(`Calorie target: ${val} kcal (Hearty meal - adding grains & healthy fats)`);
+      }
+    }
+
+    // PRD v2.3 Dietary Toggles
+    function toggleDietChip(btn) {
+      const isActive = btn.classList.contains('bg-primary-container');
+      const diet = btn.getAttribute('data-diet');
+      if (!isActive) {
+        btn.classList.add('bg-primary-container', 'text-surface-container-lowest', 'font-bold');
+        btn.classList.remove('bg-surface-container-high', 'text-on-surface');
+        showFeedback(`Dietary guardrail active: ${diet}`);
+      } else {
+        btn.classList.remove('bg-primary-container', 'text-surface-container-lowest', 'font-bold');
+        btn.classList.add('bg-surface-container-high', 'text-on-surface');
+        showFeedback(`Removed guardrail: ${diet}`);
+      }
+    }
+  </script>
+</body>
+</html>
